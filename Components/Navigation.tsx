@@ -54,7 +54,7 @@ const pathName = usePathname();
     <div className='h-full w-60 lg:justify-center justify-start items-center flex'>
       <Link href="/" className='text-2xl font-bold text-heading2 flex justify-center items-center  lg:p-2 p-1 border-b-2 border-white'><span><GiBatteryPack className='text-white mr-2'/></span>OKUHLE</Link>
     </div>
-    <ul className='w-full lg:flex justify-between items-center hidden'>
+    <ul className='lg:w-1/2 lg:flex justify-between items-center hidden'>
      {
       navigationList.map(({id,value})=>(
         <li className={isActive(value)?'active h-20 p-5 flex justify-center items-center text-white':'h-20 p-5 flex justify-center items-center text-white'} key={id}>
