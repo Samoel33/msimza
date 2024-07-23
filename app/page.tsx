@@ -1,5 +1,8 @@
-import Image from "next/image";
-import HomeComponent from "@/Components/Home";
+
+import dynamic from 'next/dynamic';
+
+const HomeComponent= dynamic(() => import('../Components/Home'), { ssr: false });
+
 export default function Home() {
   return (
    <HomeComponent/>
